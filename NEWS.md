@@ -1,3 +1,5 @@
+# add2latex 0.1.1
+
 * Added the feature `alignat`.
 
 # add2latex 0.1.0
