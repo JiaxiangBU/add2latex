@@ -1,3 +1,5 @@
+* Added the feature `alignat`.
+
 # add2latex 0.1.0
 
 * Added the function `add_latex`.

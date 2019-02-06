@@ -18,6 +18,20 @@ add_latex <- function(type = 'bmatrix'){
             ,.close = ">"
             )
         }
+        if (type == 'alignat'){
+            glue::glue(
+            "
+            $$\\begin{alignat}{2}
+            1 + 1 &= 2 \\\\\\
+
+            1 + 2 &= 3
+            \\end{alignat}$$
+            "
+            ,.open = "<"
+            ,.close = ">"
+            ,sep = '\\'
+            )
+        }
         if (type == 'more') {
             cat("More types are under development, please click")
             cat("https://jiaxiangli.netlify.com/2018/01/30/rmarkdown/#latex")
