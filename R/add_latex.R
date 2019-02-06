@@ -2,7 +2,7 @@
 
 #' @author Jiaxiang Li
 #'
-#' @import rstudioapi
+#' @importFrom glue glue
 #' @export
 
 add_latex <- function(type = 'bmatrix'){
@@ -17,8 +17,7 @@ add_latex <- function(type = 'bmatrix'){
             ,.open = "<"
             ,.close = ">"
             )
-        }
-        if (type == 'alignat'){
+        } else if (type == 'alignat'){
             glue::glue(
             "
             $$\\begin{alignat}{2}
@@ -29,14 +28,12 @@ add_latex <- function(type = 'bmatrix'){
             "
             ,.open = "<"
             ,.close = ">"
-            ,sep = '\\'
             )
-        }
-        if (type == 'more') {
-            cat("More types are under development, please click")
-            cat("https://jiaxiangli.netlify.com/2018/01/30/rmarkdown/#latex")
+        } else if (type == 'more') {
+            cat("More types are under development, please click \n")
+            cat("https://jiaxiangli.netlify.com/2018/01/30/rmarkdown/#latex \n")
         }
     clipr::write_clip(text)
     cat(text)
-    cat("\nThis bibtex is already pasted on your clipboard.")
+    cat("\nThis LaTeX is already pasted on your clipboard.")
 }
