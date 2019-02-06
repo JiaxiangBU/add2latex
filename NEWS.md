@@ -1,3 +1,5 @@
+# add2latex 0.1.0
+
 * Added the function `add_latex`.
 
 # add2latex 0.0.0.9000
