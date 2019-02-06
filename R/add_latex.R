@@ -23,9 +23,6 @@ add_latex <- function(type = 'bmatrix'){
             cat("https://jiaxiangli.netlify.com/2018/01/30/rmarkdown/#latex")
         }
     clipr::write_clip(text)
-    cat(
-        sep="\n"
-        ,text
-        ,tips()
-    )
+    cat(text)
+    cat("\nThis bibtex is already pasted on your clipboard.")
 }
