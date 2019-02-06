@@ -26,6 +26,11 @@ devtools::install_github('JiaxiangBU/add2latex')
 library(add2latex)
 ```
 
+## To-dos
+
+1.  add Travis
+2.  how to reuse the object like rebus
+
 -----
 
 <h4 align="center">
