@@ -1,9 +1,19 @@
 Package: add2latex
-Title: What the Package Does (one line, title case)
+Title: Add to Latex
 Version: 0.1.1
-Authors@R: person("First", "Last", email = "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
-Depends: R (>= 3.5.1)
-License: GPL-3
+Authors@R:
+    person(given = "Jiaxiang",
+           family = "Li",
+           role = c("aut", "cre"),
+           email = "alex.lijiaxiang@foxmail.com",
+           comment = c(ORCID = "https://orcid.org/0000-0003-3196-6492"))
+Description: Add some text snippets of Latex equations when writing using R.
+Depends: R (>= 3.5.0)
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
+Imports: 
+    clipr,
+    glue,
+    magrittr
+RoxygenNote: 6.1.1

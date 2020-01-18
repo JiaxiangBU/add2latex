@@ -1,8 +1,9 @@
 #' Quick paste a LaTex object
-
 #' @author Jiaxiang Li
 #'
-#' @importFrom glue glue
+#' @import clipr
+#' @import glue
+#' @param type The type of equations in Latex to choose.
 #' @export
 
 add_latex <- function(type = 'bmatrix'){
