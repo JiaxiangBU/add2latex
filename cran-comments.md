@@ -5,6 +5,7 @@
 
 ## R CMD check results
 
-0 errors | 0 warnings | 1 note
+0 errors | 0 warnings | 2 note
 
 * Fix invalid urls.
+* add test, examples and vignettes, add parameters of the functions.

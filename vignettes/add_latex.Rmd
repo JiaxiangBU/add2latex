@@ -1,0 +1,26 @@
+---
+title: "Add Latex"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{add_latex}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(add2latex)
+```
+
+```{r}
+add_latex('bmatrix', is_paste = FALSE)
+add_latex('alignat', is_paste = FALSE)
+add_latex('more', is_paste = FALSE)
+```
+
